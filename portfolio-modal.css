@@ -1,0 +1,189 @@
+
+.wex-video-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(2, 8, 24, 0.88);
+  backdrop-filter: blur(12px);
+}
+
+.wex-video-modal.active {
+  display: flex;
+}
+
+.wex-video-panel {
+  position: relative;
+  width: min(900px, 100%);
+  padding: 18px;
+  border: 1px solid rgba(0, 217, 255, 0.45);
+  border-radius: 20px;
+  background: #08172d;
+  box-shadow: 0 0 45px rgba(0, 217, 255, 0.18);
+}
+
+.wex-video-panel video {
+  display: block;
+  width: 100%;
+  max-height: 75vh;
+  border-radius: 12px;
+  background: #000;
+}
+
+.wex-video-close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #00d9ff;
+  border-radius: 50%;
+  background: #101b45;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.wex-video-caption {
+  padding: 14px 4px 2px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .wex-video-panel {
+    padding: 10px;
+  }
+
+  .wex-video-close {
+    top: -14px;
+    right: -8px;
+  }
+}
+
+
+/* PORTFOLIO CARD CLICK BUTTON */
+
+.project-visual {
+    position: relative;
+}
+
+.project-click-btn {
+    position: absolute;
+    right: 22px;
+    bottom: 20px;
+    z-index: 5;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    padding: 9px 19px;
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, #00D9FF, #00B8E8);
+    color: #06152B;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.22);
+    transition: all 0.3s ease;
+}
+
+.project-click-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 217, 255, 0.4);
+}
+
+@media (max-width: 600px) {
+    .project-click-btn {
+        right: 12px;
+        bottom: 12px;
+        padding: 8px 15px;
+        font-size: 10px;
+    }
+}
+
+
+/* PORTFOLIO LEFT SIDE OVERLAY */
+
+.project-visual {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-visual > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 78%;
+    z-index: 2;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 28px;
+
+    background: linear-gradient(
+        90deg,
+        rgba(3, 17, 39, 0.97) 0%,
+        rgba(3, 17, 39, 0.88) 55%,
+        rgba(3, 17, 39, 0) 100%
+    );
+
+    text-align: left;
+    pointer-events: none;
+}
+
+.project-overlay h3 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.project-overlay p {
+    color: #c4d2e8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 340px;
+}
+
+.project-click-btn {
+    z-index: 4;
+}
+
+@media (max-width: 600px) {
+    .project-overlay {
+        width: 88%;
+        padding: 15px;
+    }
+
+    .project-overlay h3 {
+        font-size: 15px;
+    }
+
+    .project-overlay p {
+        font-size: 10px;
+        line-height: 1.5;
+    }
+}

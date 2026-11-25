@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WEXEN | Website, App Development & Digital Solutions</title>
+
+    <meta name="description" content="WEXEN delivers website development, app development, UI/UX design, branding, digital marketing and AI automation solutions for businesses.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#080d1b">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WEXEN | Digital Solutions for Growing Businesses">
+    <meta property="og:description" content="Technology, innovation and digital solutions to bring your business ideas to life.">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="WEXEN | Digital Solutions">
+    <meta name="twitter:description" content="Website development, app development, design, marketing and AI solutions.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header class="site-header">
+    <nav class="nav-shell">
+
+        <a class="brand" href="index.html">
+            <img
+                src="assets/WEXEN-horizontal-original-colors.png"
+                alt="WEXEN Logo"
+                width="245"
+            >
+        </a>
+
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            type="button"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <a class="nav-cta" href="contact.html">
+            Get Started <span>→</span>
+        </a>
+
+    </nav>
+</header>
+
+<main>
+
+    <!-- HOME HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
+
+        <div class="hero-inner">
+
+            <!-- LEFT CONTENT -->
+            <div class="hero-copy">
+
+                <div class="eyebrow">
+                    <span></span>
+                    WELCOME TO
+                </div>
+
+                <h1>
+                    <span class="cyan-letter">W</span>E<span class="gradient-text">X</span>EN
+                </h1>
+
+                <div class="hero-kicker">
+                    TECHNOLOGY <i></i>
+                    INNOVATION <i></i>
+                    SOLUTIONS
+                </div>
+
+                <p>
+                    Turning ideas into intelligent digital solutions
+                    <br class="desktop-break">
+                    for a smarter, connected world.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-primary" href="contact.html">
+                        Get Started <span>→</span>
+                    </a>
+
+                    <a class="button button-outline" href="about.html">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+          <!-- RIGHT SIDE: ORIGINAL WEXEN LOGO -->
+<div class="hero-art">
+    <div class="emblem">
+        <img
+            src="assets/WEXEN-mark.png"
+            alt="WEXEN Digital Solutions"
+        >
+    </div>
+</div>
+
+        </div>
+
+        <!-- PREMIUM FLOWING LIGHT WAVES -->
+        <div class="wave-field">
+
+            <svg viewBox="0 0 1600 220" preserveAspectRatio="none"
+                 xmlns="http://www.w3.org/2000/svg">
+
+                <defs>
+
+                    <linearGradient id="waveCyan" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#20DDF5" stop-opacity=".25"/>
+                        <stop offset=".45" stop-color="#FFFFFF"/>
+                        <stop offset="1" stop-color="#20DDF5"/>
+                    </linearGradient>
+
+                    <linearGradient id="wavePurple" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#8B5CF6"/>
+                        <stop offset=".5" stop-color="#F0C8FF"/>
+                        <stop offset="1" stop-color="#A855F7" stop-opacity=".3"/>
+                    </linearGradient>
+
+                    <linearGradient id="waveBlue" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0" stop-color="#3B82F6" stop-opacity=".2"/>
+                        <stop offset=".5" stop-color="#B9DFFF"/>
+                        <stop offset="1" stop-color="#22DDF5"/>
+                    </linearGradient>
+
+                    <filter id="waveGlow" x="-30%" y="-100%" width="160%" height="300%">
+                        <feGaussianBlur stdDeviation="5" result="blur"/>
+                        <feMerge>
+                            <feMergeNode in="blur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+
+                </defs>
+
+                <!-- Soft background glow -->
+                <ellipse cx="800" cy="120" rx="650" ry="90"
+                         fill="#7138D5" opacity=".07"/>
+
+                <!-- Purple light trail -->
+                <path class="light-trail trail-purple"
+                      d="M-80 115 C180 35 330 35 520 105 S850 190 1050 105 S1370 25 1680 95"
+                      stroke="url(#wavePurple)" stroke-width="3"
+                      fill="none" filter="url(#waveGlow)"/>
+
+                <!-- Blue light trail -->
+                <path class="light-trail trail-blue"
+                      d="M-80 65 C180 145 340 190 540 125 S850 35 1050 100 S1390 180 1680 65"
+                      stroke="url(#waveBlue)" stroke-width="3"
+                      fill="none" filter="url(#waveGlow)"/>
+
+                <!-- Cyan light trail -->
+                <path class="light-trail trail-cyan"
+                      d="M-80 155 C160 190 350 15 570 65 S850 155 1060 115 S1390 40 1680 125"
+                      stroke="url(#waveCyan)" stroke-width="3.5"
+                      fill="none" filter="url(#waveGlow)"/>
+
+                <!-- Fine parallel light trails -->
+                <path class="fine-trail"
+                      d="M-80 105 C180 25 330 25 520 95 S850 180 1050 95 S1370 15 1680 85"
+                      stroke="#A855F7" stroke-width="1"
+                      fill="none"/>
+
+                <path class="fine-trail"
+                      d="M-80 75 C180 155 340 200 540 135 S850 45 1050 110 S1390 190 1680 75"
+                      stroke="#27DDF5" stroke-width="1"
+                      fill="none"/>
+
+                <!-- Moving highlights -->
+                <path class="moving-highlight"
+                      d="M-80 115 C180 35 330 35 520 105 S850 190 1050 105 S1370 25 1680 95"
+                      stroke="#FFFFFF" stroke-width="1.5"
+                      fill="none"/>
+
+                <path class="moving-highlight highlight-two"
+                      d="M-80 155 C160 190 350 15 570 65 S850 155 1060 115 S1390 40 1680 125"
+                      stroke="#DDFBFF" stroke-width="1.3"
+                      fill="none"/>
+
+                <!-- Floating glowing particles -->
+                <g class="wave-particles">
+                    <circle cx="110" cy="85" r="2.5" fill="#24DDF5"/>
+                    <circle cx="245" cy="145" r="2" fill="#B58AFF"/>
+                    <circle cx="390" cy="45" r="2.5" fill="#FFFFFF"/>
+                    <circle cx="570" cy="165" r="2" fill="#24DDF5"/>
+                    <circle cx="720" cy="55" r="3" fill="#B58AFF"/>
+                    <circle cx="890" cy="145" r="2" fill="#FFFFFF"/>
+                    <circle cx="1050" cy="45" r="2.5" fill="#24DDF5"/>
+                    <circle cx="1220" cy="155" r="2" fill="#B58AFF"/>
+                    <circle cx="1390" cy="65" r="2.5" fill="#FFFFFF"/>
+                    <circle cx="1530" cy="130" r="2" fill="#24DDF5"/>
+                </g>
+
+            </svg>
+        </div>
+
+    </section>
+
+
+  
+<!-- WHY CHOOSE WEXEN SECTION -->
+<section class="why-wexen-section" id="why-wexen">
+
+    <div class="why-container">
+
+        <div class="why-heading">
+            <span class="why-tag">WHY CHOOSE WEXEN</span>
+
+            <h2>Why Choose <span>WEXEN?</span></h2>
+
+            <p>
+                More than a service provider — we're your technology partner
+                <br>
+                for long-term growth.
+            </p>
+
+            <div class="why-heading-line"></div>
+        </div>
+
+        <div class="why-cards">
+
+            <!-- CARD 1 -->
+            <article class="why-card why-card-cyan">
+                <div class="why-card-top">
+                    <div class="why-icon">🤝</div>
+                    <h3>We Understand Your Business</h3>
+                </div>
+
+                <p>
+                    We understand your needs and create
+                    the right digital solution for your business.
+                </p>
+
+                <div class="why-card-line"></div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="why-card why-card-purple">
+                <div class="why-card-top">
+                    <div class="why-icon">▤</div>
+                    <h3>Everything in One Place</h3>
+                </div>
+
+                <p>
+                    From website design to digital marketing,
+                    we help bring your ideas online.
+                </p>
+
+                <div class="why-card-line"></div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="why-card why-card-cyan">
+                <div class="why-card-top">
+                    <div class="why-icon">✓</div>
+                    <h3>Quality You Can Trust</h3>
+                </div>
+
+                <p>
+                    We create professional, user-friendly
+                    and reliable digital experiences.
+                </p>
+
+                <div class="why-card-line"></div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="why-card why-card-purple">
+                <div class="why-card-top">
+                    <div class="why-icon">🌱</div>
+                    <h3>We Grow With You</h3>
+                </div>
+
+                <p>
+                    As your business grows, we help you
+                    improve and expand your digital presence.
+                </p>
+
+                <div class="why-card-line"></div>
+            </article>
+
+        </div>
+
+    </div>
+    </section>
+
+    
+<!-- FEATURED WORK SECTION -->
+<section class="featured-work" id="featured-work">
+
+    <div class="featured-container">
+
+        <div class="featured-heading">
+            <span class="featured-tag">OUR SELECTED WORK</span>
+            <h2>Featured <span>Work</span></h2>
+            <p>
+                Ideas transformed into meaningful digital experiences.
+                Explore what we can create.
+            </p>
+            <div class="featured-heading-line"></div>
+        </div>
+
+        <div class="featured-grid">
+
+            <!-- WEBSITE DEVELOPMENT -->
+            <article class="work-card work-web">
+
+                <div class="work-visual">
+                    <span class="work-number">01</span>
+                    <img
+                        src="assets/wexen-web-development.jpg"
+                        alt="Website development workspace"
+                        class="work-image">
+                </div>
+
+                <div class="work-info">
+                    <span>WEB DEVELOPMENT</span>
+                    <h3>Modern Website Experiences</h3>
+                    <p>
+                        Responsive, elegant and high-performance
+                        websites that grow your business.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- APP DEVELOPMENT -->
+            <article class="work-card work-app">
+
+                <div class="work-visual">
+                    <span class="work-number">02</span>
+                    <img
+                        src="assets/wexen-app-development.jpg"
+                        alt="Mobile application design"
+                        class="work-image">
+                </div>
+
+                <div class="work-info">
+                    <span>APP DEVELOPMENT</span>
+                    <h3>Smart Digital Applications</h3>
+                    <p>
+                        Intuitive digital products built around
+                        user needs and experiences.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- UI UX & BRANDING -->
+            <article class="work-card work-design">
+
+                <div class="work-visual">
+                    <span class="work-number">03</span>
+                    <img
+                        src="assets/wexen-uiux-branding.jpg"
+                        alt="UI UX and branding design workspace"
+                        class="work-image">
+                </div>
+
+                <div class="work-info">
+                    <span>UI / UX & BRANDING</span>
+                    <h3>Creative Brand Experiences</h3>
+                    <p>
+                        Distinctive visual identities and
+                        user-focused designs for your brand.
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="featured-action">
+            <a href="portfolio.html" class="featured-button">
+                Explore Portfolio <span>→</span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- OUR PROCESS SECTION -->
+<section class="our-process" id="our-process">
+
+    <div class="process-container">
+
+        <div class="process-heading">
+            <span class="process-tag">HOW WE WORK</span>
+
+            <h2>Our <span>Process</span></h2>
+
+            <p>
+                From your first idea to the final launch,
+                we make the entire journey simple.
+            </p>
+        </div>
+
+        <div class="process-grid">
+
+            <!-- STEP 01 -->
+            <article class="process-card">
+                <div class="process-number">01</div>
+                <div class="process-icon">✦</div>
+
+                <h3>Understanding Your Needs</h3>
+
+                <p>
+                    We listen to your ideas, understand your
+                    business goals and identify what you need.
+                </p>
+            </article>
+
+            <!-- STEP 02 -->
+            <article class="process-card">
+                <div class="process-number">02</div>
+                <div class="process-icon">⌘</div>
+
+                <h3>Planning Your Project</h3>
+
+                <p>
+                    We prepare a clear plan, discuss the
+                    right solutions and define the project timeline.
+                </p>
+            </article>
+
+            <!-- STEP 03 -->
+            <article class="process-card">
+                <div class="process-number">03</div>
+                <div class="process-icon">◇</div>
+
+                <h3>Design & Development</h3>
+
+                <p>
+                    We design and build your website or
+                    application to bring your ideas to life.
+                </p>
+            </article>
+
+            <!-- STEP 04 -->
+            <article class="process-card">
+                <div class="process-number">04</div>
+                <div class="process-icon">↗</div>
+
+                <h3>Launch & Ongoing Support</h3>
+
+                <p>
+                    We launch your project, help you get started
+                    and provide support as your business grows.
+                </p>
+                    </article>
+
+    </div> <!-- process-grid ends -->
+
+    <div class="process-action">
+        <a href="about.html" class="featured-button">
+            About Us <span>→</span>
+        </a>
+    </div>
+
+</div> <!-- process-container ends -->
+
+</section>
+
+            
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<script src="js/script.js"></script>
+
+<!-- WEXEN COMMON FOOTER -->
+<footer class="wexen-footer">
+    <div class="wexen-footer-line"></div>
+
+    <p>© 2026 WEXEN. All Rights Reserved.</p>
+    <p>Designed with Innovation. Built with Purpose.</p>
+</footer>
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/917207893116"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with WEXEN on WhatsApp">
+
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="currentColor" d="M16 .8A15.1 15.1 0 0 0 3.1 23.7L1 31l7.5-2A15.1 15.1 0 1 0 16 .8Zm0 27.5a12.4 12.4 0 0 1-6.3-1.7l-.5-.3-4.5 1.2 1.2-4.4-.3-.5A12.4 12.4 0 1 1 16 28.3Zm6.8-9.3c-.4-.2-2.1-1-2.4-1.1-.3-.1-.6-.2-.8.2-.2.4-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.5-.6-2.8-1.8-1-.9-1.7-2-1.9-2.4-.2-.4 0-.6.2-.8l.6-.7c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.5-.3.4-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.1.8.3 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.1-.4-.2-.8-.4Z"/>
+    </svg>
+</a>
+
+<script src="js/chatbot.js"></script>
+
+</body>
+</html>
